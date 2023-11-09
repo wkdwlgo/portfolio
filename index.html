@@ -22,11 +22,50 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a932920ec8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="src/main.js"></script>
+    <script src="src/main.js" defer></script>
+    <!-- defer는 좀 있다 받을 께 란 뜻으로, 해당 내용이 나왔을 때만 내용을 읽는다. 처음부터 코드를 다운 받는 것이 아니라
+    => 성능을 올린다 -->
 </head>
-
-
 <body>
-    
+    <!-- header -->
+    <header>
+        <div>
+            <img src="images/profile_img.PNG" alt="logo"/ >
+            <h1><a href="#">Jisoleil</a></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <!-- 해당 아이디로 이동 -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="skills">Skills</a></li>
+                <li><a href="work">My Work</a></li>
+                <li><a href="testimonials">Testimonials</a></li>
+                <li><a href="contact">Contact</a></li>
+                <!-- a 태그는 단순히 링크 연결 뿐만 아니라 email 작성 연동, 전화 번호 연동 등 다양한 기능이 있다.  -->
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section id="home"></section>
+        <!-- about -->
+        <section id="about"></section>
+        <!-- skills -->
+        <section id="skills"></section>
+        <!-- work -->
+        <section id="work"></section>
+        <!-- testimonials -->
+        <section id="testimonials"></section>
+        <!-- arrow up! -->
+        <aside></aside>
+    </main>
+    <!-- footer -->
+    <footer id="contact">
+
+    </footer>
 </body>
 </html>
