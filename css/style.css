@@ -1,0 +1,88 @@
+/* Global*/
+:root{
+    /*App Color: 한단계더 추상화 가능*/
+    --color-primary:var(--color-black);
+    --color-primary-variant:var(--color-gray);
+    --color-accent:var(--color-mint);
+    --color-accent-varient:var(--color-blue);
+    --color-text:var(--color-white);
+    
+    /*Color*/
+ --color-white: #EEffff;
+
+--color-black: #212121;
+
+--color-blue: #586e9d;
+
+--color-orange: #fd6413;
+
+--color-gray: #737a7a;
+--color-mint: #80cbc4;
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+button{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+button:focus{
+    outline: 1px solid var(--color-accent);
+}
+header{
+    background-color: var(--color-black);
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*수직으로 정렬*/
+} 
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 15px;
+}  
+.header__logo__img{
+    width: 36px;
+    height: 36px;
+}
+.header__logo__title{
+    font-size: 1.8rem;/*현재 기본 픽셀이 16px라면 16*1.8 이라는 뜻*/
+}   
+.header__menu {
+    display: flex;
+    gap:4px; 
+}
+.header__menu__item{
+    padding: 8px 16px;
+}
+.header__menu__item:hover{
+    border-bottom: 1.5px solid var(--color-accent);
+    
+}
+.header__menu__item.active{
+    border: 1.5px solid var(--color-accent);
+    border-radius: 7px;
+}

@@ -8,7 +8,7 @@
     <meta name="description" content="지해의 포토폴리오"/>
     <!-- 메타에 해당 페이지의 설명을 쓴다. Seo 작업 -->
     <meta name="author" content="jisoleil">
-    <link rel="shortcut icon" href="images/profile_img.PNG">
+    <link rel="shortcut icon" href="images/profile_favicon.PNG">
     <!-- OG (Open Graph Data) -->
     <meta property="og:title" content="지해의 포토폴리오"/>
     <meta property="og:type" content="website"/>
@@ -28,21 +28,21 @@
 </head>
 <body>
     <!-- header -->
-    <header>
-        <div>
-            <img src="images/profile_img.PNG" alt="logo"/ >
-            <h1><a href="#">Jisoleil</a></h1>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="images/profile_icon.PNG" alt="logo"/ >
+            <h1 class="header__logo__title"><a href="#">Jisoleil</a></h1>
         </div>
         
-        <nav>
-            <ul>
+        <nav >
+            <ul class="header__menu">
                 <!-- 해당 아이디로 이동 -->
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="skills">Skills</a></li>
-                <li><a href="work">My Work</a></li>
-                <li><a href="testimonials">Testimonials</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a class="header__menu__item active" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="skills">Skills</a></li>
+                <li><a class="header__menu__item" href="work">My Work</a></li>
+                <li><a class="header__menu__item" href="testimonials">Testimonials</a></li>
+                <li><a class="header__menu__item" href="contact">Contact</a></li>
                 <!-- a 태그는 단순히 링크 연결 뿐만 아니라 email 작성 연동, 전화 번호 연동 등 다양한 기능이 있다.  -->
             </ul>
         </nav>
@@ -52,7 +52,7 @@
     <main>
         <!-- home -->
         <section id="home">
-            <img src="images/profile_img.PNG" alt="Jisoleil's profile">
+            <img src="images/profile_.PNG" alt="Jisoleil's profile">
             <h2>Welcome to Jisoleil&#39;s portfolio</h2>
             <p>안녕하세요 같이 일하고 싶어지는 개발자 장지해입니다.</p>
             <p>Let&#39;s Work Together!</p>
