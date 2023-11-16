@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:wght@100;400&family=Noto+Serif+KR&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a932920ec8.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" defer></script>
     <!-- defer는 좀 있다 받을 께 란 뜻으로, 해당 내용이 나왔을 때만 내용을 읽는다. 처음부터 코드를 다운 받는 것이 아니라
@@ -39,10 +41,10 @@
                 <!-- 해당 아이디로 이동 -->
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="skills">Skills</a></li>
-                <li><a class="header__menu__item" href="work">My Work</a></li>
-                <li><a class="header__menu__item" href="testimonials">Testimonials</a></li>
-                <li><a class="header__menu__item" href="contact">Contact</a></li>
+                <li><a class="header__menu__item" href="#skills">Skills</a></li>
+                <li><a class="header__menu__item" href="#work">My Work</a></li>
+                <!-- <li><a class="header__menu__item" href="#testimonials">Testimonials</a></li> -->
+                <li><a class="header__menu__item" href="#contact">Contact</a></li>
                 <!-- a 태그는 단순히 링크 연결 뿐만 아니라 email 작성 연동, 전화 번호 연동 등 다양한 기능이 있다.  -->
             </ul>
         </nav>
@@ -51,84 +53,93 @@
     <!-- main -->
     <main>
         <!-- home -->
-        <section id="home">
-            <img src="images/profile_.PNG" alt="Jisoleil's profile">
-            <h2>Welcome to Jisoleil&#39;s portfolio</h2>
-            <p>안녕하세요 같이 일하고 싶어지는 개발자 장지해입니다.</p>
-            <p>Let&#39;s Work Together!</p>
-            <a href="#contact">Contact Me!</a>
+        <section id="home" class="section">
+                <h2 class="home__title">Welcome to <span class="font__color__mint">Jisoleil&#39;s</span> portfolio</h2>
+                <p class="home_description">
+                   저의 날카로운 '눈썰미'로 사람들에게 더 나은 UX,UI를 드리는 Front-end 개발자가 되겠습니다.
+                </p>
+                
         </section>
         <!-- about -->
-        <section id="about">
-            
-            
-                <h2>About me</h2>
-                <p>
-                    반응형 웹사이트, react를 활용한 웹사이트, aws를 사용한 배포에 대한 경험이 있습니다
-                    하루하루 스킬이 늘어가는 개발자 입니다. 
-                </p>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>
-                        <p>Front-end</p>
-                        <p>HTML, CSS, JavaScript, React</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-server"></i>
-                        <p>Back-end</p>
-                        <p>Java, SpringBoot, Python, Django, JavaScript</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="https://aivle.kt.co.kr/tpl/011/img/common/logo.png" alt="">
-                        <p>Aivle School AI track</p>
-                        <p>2023.01 - 2023.07</p>
-                    </li>
-                    <li>
-                        <img src="https://www.codestates.com/assets/common/logo/codestates-main.svg" alt="">
-                        <p>codestates</p>
-                        <p>2023.08 - 2023.08</p>
-                    </li>
-                </ul>
+        <section id="about" class="section">
+                <h2 class="about__title title">About me</h2>
+                <section class="profile">
+                    <img class="profile__img" src="images/profile_icon.PNG" alt="">
+                    <div>
+                       <ul>
+                        <li class="profile__li padding_top_zero">
+                            <i class="fa-solid fa-user"></i>
+                            <p>장지해</p>
+                        </li>
+                        <li class="profile__li">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <p>1998. 10. 12</p>
+                        </li>
+                        <li class="profile__li">
+                            <i class="fa-solid fa-house"></i>
+                            <p>전북 군산시</p>
+                        </li>
+                        <li class="profile__li">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>janggh1012@naver.com</p>
+                        </li>
+                        <li class="profile__li">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>군산대학교 ( 컴퓨터정보공학전공 )</p>
+                        </li>
+                       </ul>
+                    </div>
+                </section>
+                <section class="edu">
+                    <ul class="edu__ul">
+                        <li class="edu__li">
+                            <img class="edu__logo" src="https://aivle.kt.co.kr/tpl/011/img/common/logo.png" alt="">
+                            <div class="edu__li__div">
+                                <p>Aivle School AI track</p>
+                                <p>2023.01 - 2023.07</p>
+                            </div>
+                        </li>
+                        <li class="edu__li">
+                            <img class="edu__logo" src="https://www.codestates.com/assets/common/logo/codestates-main.svg" alt="">
+                            <div class="edu__li__div">
+                                <p>코드스테이츠 성신여자대학교 SW021(소프트웨어 제로투원): 웹프론트엔드 개발자 양성 교육</p>
+                                <p>2023.08 - 2023.08</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
         </section>
         <!-- skills -->
-        <section id="skills">
-            <h2>My Skills</h2>
-            <p>Skills & Attribute</p>
-            <p>
+        <section id="skills" class="section">
+            <h2 class="skills__title">My Skills</h2>
+            <p class="skills__title__midile">Skills & Attribute</p>
+            <p class="skills__title__description">
                 <!-- lorem 이라고 하면 랜덤한 문장 나옴 -->
                 반응형 웹사이트, react를 활용한 웹사이트, aws를 사용한 배포에 대한 경험이 있습니다
                     하루하루 스킬이 늘어가는 개발자 입니다. 
             </p>
-            <div>
-                <section>
-                    <h3>Main Skills</h3>
-                    <p>상대적으로 점수를 짜게 줍니다..(자신에게 엄격한 편)</p>
-                    <ul>
-                        <li>
-                            <div><span>HTML</span><span>90%</span></div>
-                            <div><div style="width: 90%;"></div></div>
+            <section class="skills__skills">
+                    <h3 class="skills__skills__title">Skills</h3>
+                    <ul class="skills__skills__ul">
+                        <li class="skills__skills__li">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>Front-end</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
                         </li>
-                        <li>
-                            <div><span>CSS</span><span>85%</span></div>
-                            <div><div style="width: 85%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>JavaScript</span><span>80%</span></div>
-                            <div><div style="width: 80%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>React</span><span>70%</span></div>
-                            <div><div style="width: 70%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Python</span><span>80%</span></div>
-                            <div><div style="width: 80%;"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Java</span><span>70%</span></div>
-                            <div><div style="width: 70%;"></div></div>
+                        <li class="skills__skills__li">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Back-end</p>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Django</li>
+                            </ul>
                         </li>
                     </ul>
                 </section>
@@ -145,33 +156,12 @@
                     <h3>Etc</h3>
                     <ul>
                         <li>Git</li>
+                        <li>Notion</li>
                     </ul>
-                </section>
-                <section>
-                    <h3>Coding Skills</h3>
-                    <ul>
-                        <li>
-                         <h3>React</h3>
-                         <p></p>
-                        </li>
-                        <li>
-                         <h3>HTMl/CSS</h3>
-                         <p></p>
-                        </li>
-                        <li>
-                         <h3>JavaScript</h3>
-                         <p></p>
-                        </li>
-                        <li>
-                         <h3>Python</h3>
-                         <p></p>
-                        </li>
-                     </ul>
-                </section>
-            </div>
+            </section>
         </section>
         <!-- work -->
-        <section id="work">
+        <section id="work" class="section">
             <h2>My work</h2>
             <p>Projects</p>
             <ul>
@@ -200,9 +190,8 @@
         </aside>
     </main>
     <!-- footer -->
-    <footer id="contact">
-        <h2>Letet&#39;s talk</h2>
-        <p>janggh1012@naver.com</p>
+    <footer id="contact" class="section">
+        <h2>Let&#39;s talk</h2>
         <ul>
             <li><a href="https://github.com/wkdwlgo" title="my github link"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="https://glow-clarinet-ba0.notion.site/43106c70d7cc4c2eb8a1926ab3d687c5"><i class="fa-brands fa-linkedin" title="my notion link"></i></a></li>
