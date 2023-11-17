@@ -68,24 +68,24 @@
                     <div>
                        <ul>
                         <li class="profile__li padding_top_zero">
-                            <i class="fa-solid fa-user"></i>
-                            <p>장지해</p>
+                            <i class="fa-solid fa-user font_size_1rem"></i>
+                            <p class="font_size_1rem">장지해</p>
                         </li>
                         <li class="profile__li">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>1998. 10. 12</p>
+                            <i class="fa-solid fa-cake-candles font_size_1rem"></i>
+                            <p class="font_size_1rem">1998. 10. 12</p>
                         </li>
                         <li class="profile__li">
-                            <i class="fa-solid fa-house"></i>
-                            <p>전북 군산시</p>
+                            <i class="fa-solid fa-house font_size_1rem"></i>
+                            <p class="font_size_1rem">전북 군산시</p>
                         </li>
                         <li class="profile__li">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>janggh1012@naver.com</p>
+                            <i class="fa-solid fa-envelope font_size_1rem"></i>
+                            <p class="font_size_1rem">janggh1012@naver.com</p>
                         </li>
                         <li class="profile__li">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <p>군산대학교 ( 컴퓨터정보공학전공 )</p>
+                            <i class="fa-solid fa-graduation-cap font_size_1rem"></i>
+                            <p class="font_size_1rem">군산대학교 ( 컴퓨터정보공학전공 )</p>
                         </li>
                        </ul>
                     </div>
@@ -111,59 +111,61 @@
         </section>
         <!-- skills -->
         <section id="skills" class="section">
-            <h2 class="skills__title">My Skills</h2>
+            <h2 class="skills__title title">My Skills</h2>
             <p class="skills__title__midile">Skills & Attribute</p>
             <p class="skills__title__description">
                 <!-- lorem 이라고 하면 랜덤한 문장 나옴 -->
                 반응형 웹사이트, react를 활용한 웹사이트, aws를 사용한 배포에 대한 경험이 있습니다
                     하루하루 스킬이 늘어가는 개발자 입니다. 
             </p>
-            <section class="skills__skills">
-                    <h3 class="skills__skills__title">Skills</h3>
-                    <ul class="skills__skills__ul">
-                        <li class="skills__skills__li">
-                            <i class="fa-brands fa-html5"></i>
-                            <p>Front-end</p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                            </ul>
-                        </li>
-                        <li class="skills__skills__li">
-                            <i class="fa-solid fa-server"></i>
-                            <p>Back-end</p>
-                            <ul>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>Django</li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="skills">
+                <section class="skills__skills skills__section__margin">
+                        <h3 class="skills__section__title">Skills</h3>
+                        <ul class="skills__skills__ul skills__ul">
+                            <li class="skills__skills__li">
+                                <i class="skills__icon fa-brands fa-html5"></i>
+                                <p class="skills__li__title">Front-end</p>
+                                <ul>
+                                    <li class="skills__li skills__li__li">HTML</li>
+                                    <li class="skills__li skills__li__li">CSS</li>
+                                    <li class="skills__li skills__li__li">JavaScript</li>
+                                    <li class="skills__li skills__li__li">React</li>
+                                </ul>
+                            </li>
+                            <li class="skills__skills__li">
+                                <i class="skills__icon fa-solid fa-server"></i>
+                                <p class="skills__li__title">Back-end</p>
+                                <ul class="skills__ul">
+                                    <li class="skills__li skills__li__li">Java</li>
+                                    <li class="skills__li skills__li__li">Python</li>
+                                    <li class="skills__li skills__li__li">SpringBoot</li>
+                                    <li class="skills__li skills__li__li">Django</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills__tools skills__section__margin">
+                        <h3 class="skills__section__title">Tools</h3>
+                        <ul class="skills__ul">
+                            <li class="skills__li">Visual Studio Code</li>
+                            <li class="skills__li">IntelliJ</li>
+                            <li class="skills__li">Eclipse</li>
+                            <li class="skills__li">Jupyter</li>
+                        </ul>
+                    </section>
+                    <section class="skills__etc skills__section__margin">
+                        <h3 class="skills__section__title">Etc</h3>
+                        <ul>
+                            <li class="skills__li">Git</li>
+                            <li class="skills__li">Notion</li>
+                        </ul>
                 </section>
-                <section>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>Eclipse</li>
-                        <li>Jupyter</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Etc</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Notion</li>
-                    </ul>
-            </section>
+            </div>
         </section>
         <!-- work -->
         <section id="work" class="section">
-            <h2>My work</h2>
-            <p>Projects</p>
+            <h2 class="title">My work</h2>
+            <p class="work__title__middle">Projects</p>
             <ul>
                 <li><a href="#" target="_blank">
                     <img src="images/projects/project1.webp" alt="project1">
