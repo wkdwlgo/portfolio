@@ -284,4 +284,51 @@ header{
     margin-bottom: 1rem;
     text-align: center;
 }
-
+.project{
+    display: flex;
+    
+    background-color: var(--color-white-backgroud);
+    color: var(--color-black);
+}
+.project__img{
+    height: 400px;
+    
+}
+.project__metadata{
+position: relative;
+text-align: left;
+padding: 3rem 0 0 2rem;
+}
+.project__skills{
+    display: flex;
+}
+.project__title{
+    font-size: 1.3rem;
+    font-weight: 1000;
+    padding-bottom: 0.7rem;
+}
+.project__semi__title{
+    padding-bottom: 0.7rem;
+}
+.project__skills__li{
+    padding: 0.1rem;
+    margin-right: 0.1rem;
+    background-color: var(--color-gray);
+    color: var(--color-text);
+    border-radius: 11%;
+    margin-bottom: 0.6rem;
+}
+.project__position{
+    font-weight: 700;
+    padding-bottom: 0.7rem;
+}
+.project__do{
+    padding-bottom: 0.7rem;
+}
+.project__do__li{
+    padding-bottom: 0.1rem;
+}
+.project__site{
+    color: var(--color-blue);
+    font-weight: 600;
+}
