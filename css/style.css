@@ -5,8 +5,8 @@
     --color-primary-variant:var(--color-gray);
     --color-accent:var(--color-mint);
     --color-accent-varient:var(--color-blue);
-    --color-text:var(--color-white);
-    --color-white-backgroud:var(--color-white2);
+    --color-text:var(--color-black);
+    --color-white-backgroud:var(--color-white);
     
     /*Color*/
  --color-white: #ffffff;
@@ -40,7 +40,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-white);
 }
 button{
     background-color: transparent;
@@ -52,8 +52,8 @@ button:focus{
 }
 /*Common*/
 .section{
-    padding: 4rem 10rem 4rem 10rem;
-    text-align: center;
+    padding: 3.5rem 7rem 3.5rem 5rem;
+    text-align: left;
     
 }
 .title{
@@ -127,8 +127,7 @@ header{
     background-position:center ; */
     padding: 5rem 5rem 3.5rem 5rem;
     height: 600px;
-    color: var(--color-text);
-    text-align: center;
+    color: var(--color-white);
     padding-top: 10rem;
     justify-content: center;
     align-items: center;
@@ -159,7 +158,6 @@ header{
 }
 .about__title{
     padding: 0 0 1.5rem 0;
-    text-align: center;
     font-size: 2rem;
 }
 .profile{
@@ -168,7 +166,7 @@ header{
   justify-content: center;
   padding: 3.5rem 5rem 3.5rem 5rem;
   
-  background-color: var(--color-white);
+  background-color: var(--color-white2);
   
 }
 .profile__img{
@@ -207,90 +205,80 @@ header{
 }
 /*skills*/
 #skills{
-    background-color: var(--color-black);
+    background-color: var(--color-white-backgroud);
     color: var(--color-text);
     width: 100%;
 }
 .skills{
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 
 }
 .skills__title{
-    text-align: center;
+    
 }
 .skills__title__midile
 {   
     font-size: 1.7rem;
     margin-bottom: 0.5rem;
-    text-align: center;
+    
 }
 .skills__title__description{
     font-size: 1rem;
-    text-align: center;
+    
     margin-bottom: 0.5rem;
 }
 
-.skills__skills{
-    grid-row: span 2;
-    padding: 1rem;
-    background-color: var(--color-black2);
-}
+.skills__section{
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: var(--color-white2);
+    border-radius: 10px;
+    text-align: left;
 
-.skills__tools{
-    padding: 1rem;
 }
-.skills__etc{
-    padding: 1rem;
-    background-color: #1a1634;
-
+.skills__section__icon{
+    font-size: 3rem;
+    margin: 0 0 0.8rem 0;
+    
 }
 .skills__section__title{
-    color: var(--color-accent);
-    margin: 1rem 0;
-    font-size: 1.2rem;
-}
-.skills__section__margin{
-    
-}
-.skills__icon{
-    font-size: 5rem;
-    color: var(--color-blue);
-    margin: 0 1rem 1rem 1rem;
-}
-.skills__skills__ul{
-    display: flex;
-    
-    justify-content: space-evenly;
-   
-}
-.skills__li__title{
-    font-size: 1.07em;
-    margin-bottom: 1rem;
-}
-.skills__skills__li{
+    font-size: 1.3rem;
+    margin: 0 0 0.8rem 0;
+    font-weight: 600;
 
 }
-.skills__ul{
-    margin-bottom: 1rem;
+.skills__plus__btn{
+    background-color: var(--color-black);
+    border-radius: 100%;
+    color: var(--color-white2);
+    padding: 0.3rem;
+    margin: 0.8rem 0 0 0;
+    transition:  all 250ms ease-in;
+
 }
-.skills__li{
-    padding-bottom: 0.2rem;
+.plus__icon{
+    font-size: 1rem;
+
 }
-.skills__li__li:hover{
-    border-bottom: 1.5px solid var(--color-accent);
-    
+.plus__btn__box{
+    display: flex;
+    justify-content: end;
+}
+.skills__plus__btn:hover{
+    color: var(--color-white);
+    border: solid 3px var(--color-white);
 }
 /* work */
 #work{
-    background-color: var(--color-black);
+    background-color: var(--color-white-backgroud);
     color: var(--color-text);
 }
 
 .work__title__middle{
     font-size: 1.7rem;
     margin-bottom: 1rem;
-    text-align: center;
+    
 }
 
 .projects__box{
@@ -434,15 +422,16 @@ padding: 3rem 0 0 2rem;
 
 /* footer */
 #contact{
-    background-color: var(--color-black);
+    background-color: var(--color-white2);
     color: var(--color-text);
+    padding-bottom: 5rem;
 }
 .footer__links{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 1rem;
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 0rem;
 }
 .footer__link{
     font-size: 2rem;
@@ -452,7 +441,9 @@ padding: 3rem 0 0 2rem;
 .footer__link:hover{
     color: var(--color-accent);
 }
-
+.link__icon{
+    color: var(--color-gray);
+}
 @media screen and (max-width:920px) {
     .profile__img{
         display: none;
