@@ -166,7 +166,8 @@
         <section id="work" class="section">
             <h2 class="title">My work</h2>
             <p class="work__title__middle">Projects</p>
-            <ul>
+            <div class="projects__box">
+            <ul class="projects animated">
                 <li class="project">
                         <img src="images/projects/project1.webp" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -189,10 +190,10 @@
                                 <li class="project__do__li">git을 이용한 코드 통합과 간단한 형상관리 </li>
                                 <li class="project__do__li">toast ui 등 라이브러리를 레이아웃에 적용</li>
                             </ul>
-                            <div class="project__site__div">
+                            
                                 <a class="project__site" href="#" title="movieverse site">사용해보기 > </a>
                                 <a class="project__site project__github" href="https://github.com/KrswJo/aivle_ai_3rd_13th_big" title="go KarT github"><span class="english__font__bold">github</span>보러가기 > </a>
-                            </div>
+            
                         </div>
                     
                 </li>
@@ -222,8 +223,10 @@
                             </div>
                         </div>
                 </li>
-                
+                <button class="project__button prev__button"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="project__button next__button"><i class="fa-solid fa-arrow-right"></i></button>
             </ul>
+        </div>
         </section>
         <!-- arrow up! -->
         <aside class="arrow">
