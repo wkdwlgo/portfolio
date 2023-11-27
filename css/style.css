@@ -351,44 +351,99 @@ header{
     position: relative;
     width: 100%;
     background-color: var(--color-white2);
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    border-radius: 10px;
     
 }
 .projects{
-    padding: 3rem 0 1rem 1rem;
+    
 
 
+}
+.projects__box{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
 }
 .project{
     display: flex;
     justify-content: space-between;
+    
 }
 .project__title__box{
     display: flex;
     justify-content: space-between;
+    
     width: 100%;
+}
+.project__title{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.project__semi__title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 0.3rem;
 }
 .project__skills{
     display: flex;
     gap: 2px;
 }
+.project__skills__li{
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+    background-color: var(--color-gray);
+    color: var(--color-white2);
+    border-radius: 10px;
+    margin-bottom: 0.2rem;
+}
 .project__img{
     height: 400px;
     
 }
+.project__position{
+    font-weight: 600;
+    padding-bottom: 0.3rem;
+}
 .project__site__div{
     display: flex;
-    
+    padding-top: 0.3rem;
+     
 }
 .project__site{
     color: var(--color-blue);
 
+}
+.project__github{
+    padding-left: 2rem;
 }
 .project__site__do{
     display: flex;
 
 }
 .project__metadata{
-    padding: 1rem 2rem 3rem 1rem;
+    padding: 0rem 2rem 0.5rem 1rem;
+    
+}
+
+.project1__metadata{
+    position: relative;
+
+}
+
+
+.project__metadata__box{
+    display: none;
+    padding: 0.5rem 0;
+
+}
+
+.slide__up{
+    display: none;
+}
+.project__metadata__hr{
+   width: 40rem;
 }
 /*aside*/
 .arrow{
