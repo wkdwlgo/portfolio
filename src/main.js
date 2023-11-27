@@ -59,4 +59,19 @@ document.addEventListener('scroll', ()=>{
     }
 })
 
+//home 섹션을 아래로 스크롤시 투명하게 처리함
+const home=document.querySelector('.home__container');
+const homeHeight=home.offsetHeight;
+document.addEventListener('scroll',()=>{
+    home.style.opacity= 1 - window.scrollY / homeHeight;
+    
+})
+
+//home 센션의  절반 정도 내려왔을때만 Arrow icon 보여주기
+document.addEventListener('scroll',()=>{
+    console.log(window.scrollY/homeHeight);
+    if(window.scrollY/homeHeight>0.5){
+        $('.arrow__link').show();
+    }
+})
 
