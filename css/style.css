@@ -136,12 +136,13 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center ; */
-    padding: 5rem 5rem 3.5rem 5rem;
+    padding-left: 3.5rem;
     height: 600px;
     color: var(--color-white);
-    padding-top: 10rem;
-    justify-content: center;
+    display: flex;
+    justify-content: left;
     align-items: center;
+    
 }
 .home__title{
     font-size: 3rem;
@@ -169,7 +170,7 @@ header{
 }
 .about__title{
     padding: 0 0 1.5rem 0;
-    font-size: 2rem;
+    
 }
 .profile{
   display: flex;

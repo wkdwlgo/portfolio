@@ -22,14 +22,13 @@ $('.skills__plus__btn').on('click', function(event) {
     })
 });
 
+
 let div_Img_Slide_down=()=>{
     $('.project1__metadata__box').hide()
     $('.project2__metadata__box').hide()
     $('.project__img1').hide();
     $('.project__img2').hide();
 }
-
-
 
 $('.project__img2').hide();
 $('.project1__metadata__box').show();
@@ -45,11 +44,6 @@ $(document).on('click','.slide__down',function(event){
         $('.project2__metadata__box').slideToggle();
         $('.project__img2').show();
     }   
-
-    
-
-
-
 });
 
 // Header에 페이지 아래로 스크롤시 다크 스타일링 적용(대강으로 주석달기)
@@ -64,4 +58,5 @@ document.addEventListener('scroll', ()=>{
         header.classList.remove('header--dark');
     }
 })
+
 
