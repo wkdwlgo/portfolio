@@ -69,7 +69,7 @@ document.addEventListener('scroll',()=>{
 
 //home 센션의  절반 정도 내려왔을때만 Arrow icon 보여주기
 document.addEventListener('scroll',()=>{
-    console.log(window.scrollY/homeHeight);
+    // console.log(window.scrollY/homeHeight);
     if(window.scrollY/homeHeight>0.5){
         $('.arrow__link').show();
     }
