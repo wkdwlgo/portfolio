@@ -73,5 +73,11 @@ document.addEventListener('scroll',()=>{
     if(window.scrollY/homeHeight>0.5){
         $('.arrow__link').show();
     }
+    else if(window.scrollY/homeHeight<0.5){
+        $('.arrow__link').hide();
+    } 
 })
+
+
+
 
