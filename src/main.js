@@ -78,6 +78,15 @@ document.addEventListener('scroll',()=>{
     } 
 })
 
-
-
-
+// 반응형 header navbar 토글버튼 클릭 처리
+const navbarMenu=document.querySelector('.header__menu');
+const navbarToggle=document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open');
+    
+})
+//navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+navbarMenu.addEventListener('click',()=>{
+    //부모에게 이벤트 요소 발생해도 자식에게 똑같이 적용 (돔덤블링)
+    navbarMenu.classList.remove('open');
+})
