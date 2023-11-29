@@ -1,3 +1,5 @@
+'use strict';
+//strict 모드로 사용하기
 
 //plus btn 클릭 이벤트
 $('.skills__plus__btn').on('click', function(event) {
