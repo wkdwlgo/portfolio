@@ -25,6 +25,10 @@
     box-sizing: border-box;
     
 }
+html{
+    /* 스크롤을 스무스하게 */
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Montserrat';
     background-color: var(--color-white-backgroud);

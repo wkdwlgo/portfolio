@@ -30,7 +30,7 @@ function callback(entries){
     //   console.log(entry.isIntersecting)
         const index=sectionsIds.indexOf(`#${entry.target.id}`);
         visibleSections[index]=entry.isIntersecting;
-        selectLastOne=index===sectionsIds.length-1&& entry.isIntersecting && entry.IntersectionRatio>=0.99;
+        selectLastOne=index===sectionsIds.length-1&& entry.isIntersecting && entry.IntersectionRatio>=0.78;
 
 //         const visibleSectionTrueIndex = visibleSections.map((value, index) => value ? index : -1) // true일 때는 현재 인덱스, 아니면 -1
 //         .filter(index => index !== -1); // -1이 아닌 값만 필터링
