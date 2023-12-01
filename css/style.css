@@ -262,7 +262,6 @@ header{
 }
 .skills__title__description{
     font-size: 1rem;
-    
     margin-bottom: 0.5rem;
 }
 
@@ -386,9 +385,10 @@ header{
 
 }
 .projects__box{
+    width: 100%;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
 }
@@ -401,7 +401,6 @@ header{
 .project__title__box{
     display: flex;
     justify-content: space-between;
-    
     width: 100%;
 }
 .project__title{
@@ -450,6 +449,7 @@ header{
 
 }
 .project__metadata{
+    width: 100%;
     padding: 0rem 2rem 0.5rem 1rem;
     
 }
@@ -470,7 +470,7 @@ header{
     display: none;
 }
 .project__metadata__hr{
-   width: 35rem;
+   width: 100%;
    
 }
 /*aside*/
@@ -582,17 +582,18 @@ header{
     }
 
     .profile__img{
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         margin-bottom: 2.5rem;
     }
     .profile__ul__container{
-        text-align: start;
+        width: 100%;
     }
     
     .profile__li{
         align-items: center;
         display: flex;
+        font-size: 1.2rem;
         padding: 1.5rem 0px 0px 3rem ;
     }
     .padding_top_zero{
@@ -642,13 +643,23 @@ header{
         height: 100%;
     }
     .projects__box{
+        text-align: center;
         display: block;
+        padding: 1rem 0.75rem;
+    }
+    .project__metadata__box{
+        text-align: left;
     }
     .project__metadata__hr{
         width: 100%;
     }
     .project__site__do{
         display: flex;
+    }
+    .project__metadata{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        
     }
     /* arrow */
     .arrow__link{
