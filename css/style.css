@@ -577,15 +577,30 @@ header{
     .profile{
         display: block;
         text-align: center;
+        padding: 3rem 2rem;
         
     }
 
     .profile__img{
-        
+        height: 200px;
+        width: 200px;
         margin-bottom: 2.5rem;
     }
     .profile__ul__container{
-        text-align: left;
+        text-align: start;
+    }
+    
+    .profile__li{
+        align-items: center;
+        display: flex;
+        padding: 1.5rem 0px 0px 3rem ;
+    }
+    .padding_top_zero{
+        padding-top: 0;
+    }
+    
+    .profile__li > p {
+        padding-left: 1.5rem;
     }
     .edu__logo{
         width: 5rem;
