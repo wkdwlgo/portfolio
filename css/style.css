@@ -390,10 +390,12 @@ header{
     position: relative;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 .project{
     display: flex;
     justify-content: space-between;
+    
     
 }
 .project__title__box{
@@ -468,7 +470,8 @@ header{
     display: none;
 }
 .project__metadata__hr{
-   width: 40rem;
+   width: 35rem;
+   
 }
 /*aside*/
 .arrow{
@@ -514,9 +517,7 @@ header{
 .link__icon{
     color: var(--color-gray);
 }
-@media screen and (max-width:920px) {
-    
-}
+
 
 @media screen and (max-width:768px){
 
@@ -593,8 +594,29 @@ header{
         font-size: 0.9rem;
     }
     /* skills */
+    /* 1rem 3rem 1.5rem 3rem; */
     .skills{
         grid-template-columns: 1fr;
+    }
+    .close__btn__icon{
+        font-size: 2.1rem;
+    }
+    .skills__info__ul{
+        padding: 0.5rem 1.5rem 0.75rem 1.5rem;
+    }
+    .skills__info__title{
+        font-size: 1.2rem;
+        font-weight: 900;
+        padding-bottom: 0.9rem;
+    
+    }
+    .skills__info__li{
+        padding-bottom: 0.75rem;
+    }
+    .skills__info__li__p{
+        font-size: 0.9rem;
+        font-weight: 900;
+        padding-bottom: 0.1rem;
     }
     /* work */
     .project{
@@ -608,7 +630,7 @@ header{
         display: block;
     }
     .project__metadata__hr{
-        width: 36rem;
+        width: 100%;
     }
     .project__site__do{
         display: flex;
@@ -621,4 +643,8 @@ header{
         height: 3.5rem;
     }
 
+}
+
+@media screen and (max-width:400px) {
+    
 }
