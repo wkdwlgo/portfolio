@@ -390,7 +390,7 @@ header{
     position: relative;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+   
 }
 .project{
     display: flex;
@@ -426,6 +426,7 @@ header{
 }
 .project__img{
     height: 400px;
+    overflow: hidden;
     
 }
 .project__position{
@@ -575,8 +576,9 @@ header{
         
     }
     .profile{
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 3rem 2rem;
         
     }
@@ -643,15 +645,18 @@ header{
         height: 100%;
     }
     .projects__box{
+        width: 100%;
         text-align: center;
-        display: block;
+        flex-direction:column-reverse;
         padding: 1rem 0.75rem;
     }
     .project__metadata__box{
+        width: 100%;
         text-align: left;
+        
     }
     .project__metadata__hr{
-        width: 100%;
+       
     }
     .project__site__do{
         display: flex;
@@ -660,6 +665,9 @@ header{
         width: 100%;
         padding: 0.5rem 1rem;
         
+    }
+    .project__skills__li{
+        padding: 0.1rem 0.2rem;
     }
     /* arrow */
     .arrow__link{
