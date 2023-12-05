@@ -28,11 +28,14 @@ $('.skills__plus__btn').on('click', function(event) {
 let div_Img_Slide_down=()=>{
     $('.project1__metadata__box').hide()
     $('.project2__metadata__box').hide()
+    $('.project3__metadata__box').hide()
     $('.project__img1').hide();
     $('.project__img2').hide();
+    $('.project__img3').hide();
 }
 
 $('.project__img2').hide();
+$('.project__img3').hide();
 $('.project1__metadata__box').show();
 $(document).on('click','.slide__down',function(event){
     //slide__down 버튼 click 하면 slide__down 사라지고, slide__up 버튼 보이기
@@ -45,6 +48,11 @@ $(document).on('click','.slide__down',function(event){
         div_Img_Slide_down();
         $('.project2__metadata__box').slideToggle();
         $('.project__img2').show();
+    }   
+    else if ($(this).hasClass('project3')){
+        div_Img_Slide_down();
+        $('.project3__metadata__box').slideToggle();
+        $('.project__img3').show();
     }   
 });
 
